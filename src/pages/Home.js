@@ -9,7 +9,7 @@ import oAutoDaCompadecida from './../images/o-auto-da-compadecida.png'
 const Login = () => {
   return <div className="flex flex-col justify-between p-4 h-full">
 
-    <div className="w-full">
+    <div className="w-full mb-4">
       <div className="flex justify-between items-end mb-4 py-2">
         <img src={LogoTackTicket} className="w-40" alt="Logo TakeTicket" />
 
@@ -41,7 +41,7 @@ const Login = () => {
       </section>
     </div>
 
-    <p className="text-sm text-gray-500">Todos os diretos reservados © TakeTicket 2020</p>
+    <p className="text-sm text-gray-500 text-center mb-4">Todos os diretos reservados © TakeTicket 2020</p>
   </div>
 }
 
