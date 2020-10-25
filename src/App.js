@@ -26,6 +26,7 @@ function App() {
               return <Route path="/">
                 <Route path="/" component={pages.Home} exact />
                 <Route path="/dashboard" component={pages.Dashboard} exact />
+                <Route path="/events/new" component={pages.NewEvent} exact />
                 <Route path="*">
                   <Redirect to="/dashboard" />
                 </Route>

@@ -50,7 +50,7 @@ const Login = () => {
     }
   }
 
-  return <div className="flex flex-col justify-between py-20 px-10 h-full">
+  return <div className="flex flex-col justify-between pt-20 pb-2 px-10 h-full">
     <form className="flex flex-col" onSubmit={form.handleSubmit(onSubmit)}>
       <img src={LogoTackTicket} className="w-60 mb-16" alt="Logo TakeTicket" />
 

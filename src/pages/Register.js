@@ -7,7 +7,7 @@ import { Form, Button } from './../components'
 import LogoTackTicket from './../images/logo-take-ticket.svg'
 
 const Register = () => {
-  return <div className="flex flex-col justify-between py-20 px-10 h-full">
+  return <div className="flex flex-col justify-between pt-20 pb-2 px-10 h-full">
 
     <div className="flex flex-col">
       <img src={LogoTackTicket} className="w-60 mb-16" alt="Logo TakeTicket" />

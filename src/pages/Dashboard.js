@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Button } from './../components'
 
@@ -15,7 +16,9 @@ const Dashboard = () => {
   }
 
   return <div className="p-2">
-    <div>Dashboard</div>
+    <Link to="/events/new">
+      <Button color="blue-600" textColor="white" className="mb-2">Criar evento</Button>
+    </Link>
 
     <Button onClick={onClickLogout}>Sair</Button>
   </div>
