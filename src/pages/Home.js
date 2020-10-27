@@ -1,19 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { AuthContext } from '../contexts'
 import { Badge, Form, Event } from './../components'
-
 import LogoTackTicket from './../images/logo-take-ticket.svg'
 import oAutoDaCompadecida from './../images/o-auto-da-compadecida.png'
 
 const Login = () => {
+  const authContext = React.useContext(AuthContext.Context)
+
   return <div className="flex flex-col justify-between p-4 h-full">
 
     <div className="w-full mb-4">
       <div className="flex justify-between items-end mb-4 py-2">
         <img src={LogoTackTicket} className="w-40" alt="Logo TakeTicket" />
 
-        <Link to="/login" className="text-lg text-blue-600 font-bold">Login</Link>
+        {authContext.user ? <Link to="/dashboard" className="text-lg text-blue-600 font-bold">Dashboard</Link> : <Link to="/login" className="text-lg text-blue-600 font-bold">Login</Link>}
       </div>
 
       <Form.Input placeholder="Pesquisar" className="mb-4" />
