@@ -4,6 +4,7 @@ import Badge from './Badge'
 import Event from './Event'
 import Box from './Box'
 import PrivateRoute from './PrivateRoute'
+import Purchase from './Purchase'
 
 export {
   Form,
@@ -12,4 +13,5 @@ export {
   Event,
   Box,
   PrivateRoute,
+  Purchase,
 }
