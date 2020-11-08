@@ -77,7 +77,36 @@ const NewEvent = () => {
     <form onSubmit={form.handleSubmit(onSubmit)}>
       <Controller name="name" label="Nome" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.name?.message} />
       <Controller name="initialDate" label="Data do evento" type="date" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.initialDate?.message} />
-      <Controller name="state" label="Estado" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.state?.message} />
+      <Controller name="state" label="Estado" className="mb-2" control={form.control} as={Form.Select} error={form.errors?.state?.message}>
+        <option value=""></option>
+        <option value="Acre">Acre</option>
+        <option value="Alagoas">Alagoas</option>
+        <option value="Amapá">Amapá</option>
+        <option value="Amazonas">Amazonas</option>
+        <option value="Bahia">Bahia</option>
+        <option value="Ceará">Ceará</option>
+        <option value="Distrito Federal">Distrito Federal</option>
+        <option value="Espírito Santo">Espírito Santo</option>
+        <option value="Goiás">Goiás</option>
+        <option value="Maranhão">Maranhão</option>
+        <option value="Mato Grosso">Mato Grosso</option>
+        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+        <option value="Minas Gerais">Minas Gerais</option>
+        <option value="Pará">Pará</option>
+        <option value="Paraíba">Paraíba</option>
+        <option value="Paraná">Paraná</option>
+        <option value="Pernambuco">Pernambuco</option>
+        <option value="Piauí">Piauí</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+        <option value="Rondônia">Rondônia</option>
+        <option value="Roraima">Roraima</option>
+        <option value="Santa Catarina">Santa Catarina</option>
+        <option value="São Paulo">São Paulo</option>
+        <option value="Sergipe">Sergipe</option>
+        <option value="Tocantins">Tocantins</option>
+      </Controller>
       <Controller name="city" label="Cidade" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.city?.message} />
       <Controller name="street" label="Rua" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.street?.message} />
       <Controller name="number" label="Número" className="mb-2" control={form.control} as={Form.Input} error={form.errors?.number?.message} />
@@ -92,7 +121,7 @@ const NewEvent = () => {
       </Link>
     </form>
 
-    <p className="text-sm text-gray-500">Todos os diretos reservados © TakeTicket 2020</p>
+    <p className="text-sm text-gray-500 text-center">Todos os diretos reservados © TakeTicket 2020</p>
   </div>
 }
 
