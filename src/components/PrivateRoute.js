@@ -8,7 +8,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
   const authContext = React.useContext(AuthContext.Context)
 
   return <Route {...rest} render={(props) => {
-    console.log(authContext)
     if (authContext?.user) {
       return <Component {...props} />
     }
