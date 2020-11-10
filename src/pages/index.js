@@ -3,11 +3,15 @@ import Register from './Register'
 import Home from './Home'
 import Dashboard from './Dashboard'
 import NewEvent from './NewEvent'
+import NewTicket from './NewTicket'
+import CompanyEvents from './CompanyEvents'
 
 export default {
   Login,
   Register,
   Home,
   Dashboard,
-  NewEvent
+  NewEvent,
+  NewTicket,
+  CompanyEvents
 }

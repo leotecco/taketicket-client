@@ -27,6 +27,8 @@ function App() {
                 <Route path="/" component={pages.Home} exact />
                 <Route path="/dashboard" component={pages.Dashboard} exact />
                 <Route path="/events/new" component={pages.NewEvent} exact />
+                <Route path="/5ebb3cb51017232443039d31/tickets/new" component={pages.NewTicket} exact />
+                <Route path="/5ebb22c8fa97cb121c1ac818/events/myEvents" component={pages.CompanyEvents} exact />
                 <Route path="*">
                   <Redirect to="/dashboard" />
                 </Route>

@@ -1,3 +1,5 @@
-import Input from './Input'
+import Input from './Input';
+import InputCPF from './InputCPF';
+import InputCNPJ from './InputCNPJ';
 
-export default { Input }
+export default { Input, InputCPF, InputCNPJ }
