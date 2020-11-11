@@ -5,6 +5,7 @@ import Dashboard from './Dashboard'
 import NewEvent from './NewEvent'
 import NewTicket from './NewTicket'
 import CompanyEvents from './CompanyEvents'
+import MyTickets from './MyTickets'
 
 export default {
   Login,
@@ -13,5 +14,6 @@ export default {
   Dashboard,
   NewEvent,
   NewTicket,
-  CompanyEvents
+  CompanyEvents,
+  MyTickets
 }
