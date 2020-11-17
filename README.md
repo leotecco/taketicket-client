@@ -1,6 +1,6 @@
-# TakeTicket API
+# TakeTicket Client
 
-[Abrir aplicação online - Simplex](http://xxx)
+[Abrir aplicação online](https://taketicket-client.herokuapp.com/)
 
 ### Membros
 1. Alan da Silva Perez, RA: 578886
@@ -8,7 +8,7 @@
 3. Rafael Souza, RA: 580090
 
 ## Introdução
-Este documento provê uma visão geral da versão do aplicativo XX que está sendo liberada.
+Este documento provê uma visão geral da versão do aplicativo Taketicket que está sendo liberada.
 Aqui será descrito as funcionalidades do aplicativo, bem como seus problemas e limitações conhecidos.
 Por último são descritas as demandas e os problemas que foram resolvidos para liberação da versão atual.
 
@@ -16,23 +16,23 @@ Por último são descritas as demandas e os problemas que foram resolvidos para 
 
 ### Funcionalidade
 
-* XX;
-* XX;
-* XX;
-* XX;
+- Cadastro de participantes
+- Cadastro de empresa
+- Login de participantes
+- Login de empresa
+- Gerenciamento de sessão
+- Criação de evento
+- Criação de ingresso
+- Listagem de ingressos
 
-## Datas importantes
+### Funcionalidades não concluídas
 
-### Funcionalidade
-
-| Data  | Evento    |
-|-----|-----------|
-| 17/05/2017    | Início do projeto.   |
-| 22/05/2017    | Análise de tecnologias.   |
-| 24/05/2017    | Início do desenvolvimento da aplicação.   |
-| 27/05/2017    | Criação do layout da aplicação.  |
-| 16/06/2017    | Criando README.  |
-
+- Listagem de eventos da empresa - INICIADO
+- Vitrine de evento na página inicial - INICIADO
+- Página do evento - NÃO INICIADO
+- Compra e venda de ingressos - NÃO INICIADO
+- Validação dos ingressos - NÃO INICIADO
+- Dashboard em tempo real dos eventos - NÃO INICIADO
 
 ## Compatibilidade
 
