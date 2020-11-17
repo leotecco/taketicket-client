@@ -57,9 +57,9 @@ const NewTicket = () => {
       <section>
         <h2 className="text-2xl text-blue-600 font-bold mb-2">Eventos</h2>
        { events.map(x => (
-       <Event date={x.initialDate} title={x.name} category="teste" ticket="R$ 80,00 - R$ 100,00" image={oAutoDaCompadecida} className="mb-4" />
-       ))}5f8e5f6c0bd2dd21804bd004
-        
+       <Event date={x.initialDate} title={x.name} image={oAutoDaCompadecida} className="mb-4" />
+       ))}
+
       </section>
     </div>
 

@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { AuthContext } from '../contexts';
 import { Button, Form, Box } from './../components'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory, useParams } from 'react-router-dom'
 import services from './../services'
 
 const schema = yup.object().shape({
@@ -18,6 +18,7 @@ const NewTicket = () => {
   const authContext = React.useContext(AuthContext.Context)
   const [error, setError] = React.useState('')
   const [isLoading, setIsLoading] = React.useState(false)
+  const params = useParams()
 
   const form = useForm({
     mode: 'onSubmit',
@@ -33,13 +34,13 @@ const NewTicket = () => {
     setIsLoading(true)
 
     try {
-        
-       await services.modules.ticket.ticket({ name: name, value: value, event: '5ebb3cb51017232443039d31' })
+
+       await services.modules.ticket.ticket({ name: name, value: value, event: params.idEvent })
 
       console.log({name, value, event})
       alert('Cadastro realizado com sucesso')
       history.push('/dashboard')
-  
+
       setIsLoading(false)
     } catch (error) {
       console.log(error);
@@ -61,7 +62,7 @@ const NewTicket = () => {
       <Link to="/dashboard">
         <Button type="submit" className="mb-4">Voltar</Button>
       </Link>
-    
+
 
     <p className="text-sm text-gray-500">Todos os diretos reservados © TakeTicket 2020</p>
     </form>

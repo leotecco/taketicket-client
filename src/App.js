@@ -21,8 +21,8 @@ function App() {
           <PrivateRoute path="/dashboard" component={pages.Dashboard} exact />
           <PrivateRoute path="/events/new" component={pages.NewEvent} exact />
           <PrivateRoute path="/my-tickets" component={pages.MyTickets} exact />
-          <PrivateRoute path="/5ebb3cb51017232443039d31/tickets/new" component={pages.NewTicket} exact />
-          <PrivateRoute path="/5ebb22c8fa97cb121c1ac818/events/myEvents" component={pages.CompanyEvents} exact />
+          <PrivateRoute path="/events" component={pages.CompanyEvents} exact />
+          <PrivateRoute path="/events/:idEvent/tickets/new" component={pages.NewTicket} exact />
           <Route path="*">
             <Redirect to="/" />
           </Route>

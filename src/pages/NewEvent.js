@@ -57,13 +57,13 @@ const NewEvent = () => {
       formData.append('number', number)
       formData.append('image', image[0])
 
-      await services.modules.events.create(formData)
+      const response = await services.modules.events.create(formData)
 
       alert('Evento criado com sucesso!')
 
       setIsLoading(false)
 
-      history.push('/dashboard')
+      history.push(`/events/${response.data.event._id}/tickets/new`)
     } catch (error) {
       setError(error?.response?.data?.message || 'Erro ao realizar login! Tente novamente!')
       setIsLoading(false)
