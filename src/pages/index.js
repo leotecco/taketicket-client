@@ -3,6 +3,8 @@ import Register from './Register'
 import Home from './Home'
 import Dashboard from './Dashboard'
 import NewEvent from './NewEvent'
+import NewTicket from './NewTicket'
+import CompanyEvents from './CompanyEvents'
 import MyTickets from './MyTickets'
 
 export default {
@@ -11,5 +13,7 @@ export default {
   Home,
   Dashboard,
   NewEvent,
+  NewTicket,
+  CompanyEvents,
   MyTickets
 }
